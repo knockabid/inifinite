@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spining Balls</title>
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-family: "Pixelify Sans", cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      .round-spiner {
+        position: absolute;
+        bottom: 0;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(193, 255, 68);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 15px;
+        animation: abid 3s ease-out infinite;
+        box-shadow: 10px 10px 30px 2px #dad9d9;
+        flex-direction: column;
+        animation-play-state: running;
+      }
+
+      .round-spiner:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes abid {
+        0% {
+        }
+        50% {
+          transform: translateX(300px);
+          transform: translateY(300px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="round-spiner">
+      <h3>Hellow world</h3>
+      <button>Hellow World</button>
+    </div>
+  </body>
+</html>
